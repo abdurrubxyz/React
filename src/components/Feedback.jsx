@@ -1,13 +1,13 @@
-import React from 'react'
+import Feedbackitem from "../components/Feedbackitem";
 
-const Feedback = ({feedback}) => {
+const Feedback = ({ feedback, deleteitem }) => {
   return (
     <div>
-        {feedback.map((items => (
-            <p key={items.id}>{items.text}</p>
-        )))}
+      {feedback.map((items) => (
+        <Feedbackitem key={items.id} text={items} deleteitem={deleteitem} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Feedback
+export default Feedback;

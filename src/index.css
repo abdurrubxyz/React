@@ -1,23 +1,19 @@
-/* body {
-    background-color: aqua;
-} */
-.title {
-  color: red;
-}
-/* .para {
-  color: yellow;
-} */
-
-body {
-    font-family: sans-serif;
+.card{
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.card {
-    max-width: 300px;
-    border: 1px solid black;
-    margin: 10px;
+.card-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.card img {
-    width: 300px;
+.card-wrapper > div{
+  display: flex;
+  gap: 15px;
 }
